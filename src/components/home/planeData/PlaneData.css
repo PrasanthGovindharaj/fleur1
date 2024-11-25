@@ -1,0 +1,51 @@
+.stats-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+  color: #333;
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.stat-title {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-item {
+    max-width: 100%;
+  }
+  .stat-icon {
+    background-color: #000000;
+
+  }
+}

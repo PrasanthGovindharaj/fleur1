@@ -1,0 +1,88 @@
+{
+  "Home": [
+    {
+      "title": "Business",
+      "submenu": [
+        {
+          "text": "Main Home",
+          "link": ""
+        },
+        {
+          "text": "Wedding Planner",
+          "link": ""
+        },
+        {
+          "text": "Venue Home",
+          "link": ""
+        },
+        {
+          "text": "Florist Showcase",
+          "link": ""
+        },
+        {
+          "text": "Wedding Cakes",
+          "link": ""
+        },
+        {
+          "text": "Landing Page",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Bridal",
+      "submenu": [
+        {
+          "text": "Bridal Store",
+          "link": ""
+        },
+        {
+          "text": "Jewelry Shop",
+          "link": ""
+        },
+        {
+          "text": "Atelier Home",
+          "link": ""
+        },
+        {
+          "text": "Beauty Home",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Personal",
+      "submenu": [
+        {
+          "text": "Wedding Announcement",
+          "link": ""
+        },
+        {
+          "text": "Wedding Invitation",
+          "link": ""
+        },
+        {
+          "text": "Blog Home",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Photography",
+      "submenu": [
+        {
+          "text": "Photography Carousel",
+          "link": ""
+        },
+        {
+          "text": "Photography Portfolio",
+          "link": ""
+        },
+        {
+          "text": "vCard Home",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}

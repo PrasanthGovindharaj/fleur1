@@ -1,0 +1,74 @@
+.solutions .card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.solutions .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.solutions .custom-image {
+  height: 400px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.solutions .bg-light {
+  padding: 40px 0;
+}
+
+.solutions .carousel-inner {
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  .solutions .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .solutions .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .solutions .row {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+
+  .solutions .card {
+    margin: 0 auto;
+  }
+}
+
+.solutions .text-center {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.solutions .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.solutions .carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.solutions .visually-hidden {
+  display: none;
+}

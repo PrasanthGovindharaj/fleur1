@@ -1,0 +1,81 @@
+.testimonials{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(179, 179, 179);
+}
+
+.testimonials h3 {
+  color: #000000;
+  font-size: 2rem;
+}
+
+.testimonials .carousel-inner {
+  text-align: center;
+  padding: 50px;
+}
+
+.testimonials .carousel-item {
+  padding: 2rem 0;
+}
+
+.testimonials .carousel-item h5 {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.testimonials .carousel-item p {
+  font-weight: bold;
+  color: #000000;
+}
+
+.carousel-item .text-muted {
+  color: #6c757d;
+}
+
+@media (min-width: 1200px) {
+  .testimonials .carousel-item h5 {
+    font-size: 1.5rem;
+  }
+
+  .testimonials .carousel-item p {
+    font-size: 1.25rem;
+  }
+
+  .testimonials .carousel-inner {
+    max-width: 100%;
+    max-height: 500px; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .testimonials .carousel-item h5 {
+    font-size: 1.3rem;
+  }
+
+  .testimonials.carousel-item p {
+    font-size: 1.15rem;
+  }
+
+  .testimonials .carousel-inner {
+    max-width: 100%;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonials .carousel-item h5 {
+    font-size: 1.1rem;
+  }
+
+  .testimonials .carousel-item p {
+    font-size: 1rem;
+  }
+
+  /* Adjust carousel height for smaller screens */
+  .testimonials .carousel-inner {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}

@@ -1,0 +1,156 @@
+.header {
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+/* .header {
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: 1000;
+  background-color: transparent; 
+}
+
+header .navbar {
+  background-color: #333; 
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+header.sticky .navbar {
+  background-color: #333;
+  color: white;
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-image {
+  width: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-link {
+  font-size: 18px;
+  padding: 10px;
+  color: var(--o-black);
+  font-family: inherit;
+  font-weight: 100;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+header .nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+
+header .nav-link:focus:after,
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+header .nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+header .navbar .nav-menu .nav-link:hover {
+  color: var(--o-black);
+}
+
+.nav-logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.nav-logo:hover {
+  color: #000000;
+  background-color: antiquewhite;
+  transform: scale(1);
+}
+.menu {
+  display: none;
+}
+header .navbar .nav-menu.show {
+  left: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    flex-direction: column;
+    transition: right 0.3s ease;
+    margin-top: 50px;
+  }
+  .logo-image {
+    width: 60px;
+  }
+
+  .nav-menu.show {
+    left: 0;
+  }
+
+  .bi {
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-menu .nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+  }
+  .menu {
+    display: block;
+  }
+
+  .logo-btn{
+    display: none;
+  }
+}

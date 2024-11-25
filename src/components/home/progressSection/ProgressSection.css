@@ -1,0 +1,166 @@
+.progress-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-section {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.progress-bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 600px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.progress {
+  flex-grow: 1;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 0 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #636363;
+}
+
+.percentage {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+    flex-shrink: 0; 
+    
+}
+
+@media (max-width: 600px) {
+  .progress-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .text-section h2 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    width: 100%; 
+    padding: 0 5px;
+  }
+
+  .progress {
+    height: 8px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+
+  .percentage {
+    font-size: 12px;
+  }
+
+  .progress-fill {
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .progress-bar {
+    width: 90%; 
+  }
+
+  .text-section h2 {
+    font-size: 26px; 
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .progress-section {
+    padding: 80px 50px;
+  }
+
+  .progress-bar {
+    width: 60%;
+  }
+
+  .progress {
+    height: 12px;
+  }
+
+  .text-section h2 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
